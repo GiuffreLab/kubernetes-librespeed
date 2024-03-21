@@ -6,7 +6,7 @@
 
 To deploy `librespeed` in kubernetes go to the folder from the cloned repo that has all of the `yaml` manifest files.
 
-Run the command from that directory
+Run this command from that directory
 
 ``` shell
 kubectl create -k .
