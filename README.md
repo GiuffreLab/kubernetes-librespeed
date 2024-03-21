@@ -28,7 +28,7 @@ From a web browser you can now access the `librespeed` frontend page by going to
 
 Example
 ``` shell
-http://192.168.1.1:30001
+http://192.168.1.10:30001
 ```
 
 ## Deleting deployment of Librespeed
