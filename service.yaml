@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: librespeed
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
     - port: 80
       targetPort: 80
+      nodePort: 30001 # Optional: Specify a nodePort in the range (30000-32767) if you want a specific port
   selector:
     app: librespeed
