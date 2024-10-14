@@ -24,9 +24,19 @@ spec:
               value: "1000" # Replace with your PGID
             - name: TZ
               value: "America/New_York" # Replace with your timezone
+          readinessProbe:
+            httpGet:
+              path: /ping
+              port: 80
+          securityContext:
+            allowPrivilegeEscalation: false
+            privileged: false
           volumeMounts:
             - name: config
               mountPath: /config
+      securityContext:
+        seccompProfile:
+          type: RuntimeDefault
       volumes:
         - name: config
           persistentVolumeClaim:
