@@ -27,9 +27,6 @@ spec:
               value: "1000" # Replace with your PGID
             - name: TZ
               value: "America/New_York" # Replace with your timezone
-          securityContext:
-            allowPrivilegeEscalation: false
-            privileged: false
           volumeMounts:
             - name: config
               mountPath: /config
