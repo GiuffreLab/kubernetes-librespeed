@@ -34,8 +34,6 @@ spec:
             allowPrivilegeEscalation: false
             privileged: false
             capabilities:
-              drop:
-                - ALL  # Drop all Linux capabilities unless explicitly needed
       volumes:
         - name: config
           persistentVolumeClaim:
